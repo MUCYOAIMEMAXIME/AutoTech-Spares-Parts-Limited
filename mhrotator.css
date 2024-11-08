@@ -1,0 +1,1007 @@
+/* Default styles (for larger screens) */
+.firstul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    gap: 60px;
+    width: 100%;
+}
+
+.firstli {
+    float: inline-start;
+}
+
+.firstli a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 12pt;
+    justify-content: center;
+}
+
+.firstli a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.firstli.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    border-radius: 1px;
+    font-size: smaller;
+	min-width: 150px; /* Adjust this value as needed */
+	max-width: 300px; /* You can set a maximum width to prevent it from expanding too much */
+	width: auto;
+
+
+
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    background-color: cyan;
+    width: 100%;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 5%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ccc;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-section {
+    background-image: url('image/slide_1.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #28a745;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.main-image {
+    background-image: url('path-to-your-image/supermarket.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.05);
+}
+
+.explanation {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.explanation h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.explanation p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .firstul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .item-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .image-section {
+        height: 200px;
+    }
+
+    .main-image {
+        height: 200px;
+    }
+
+    .explanation h2 {
+        font-size: 1.5rem;
+    }
+
+    .explanation p {
+        font-size: 0.9rem;
+    }
+
+    .product-item {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .firstli a {
+        font-size: 10pt;
+        padding: 10px 15px;
+    }
+
+    .explanation {
+        padding: 15px;
+    }
+
+    .product-name {
+        font-size: 16px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+}
+.buying-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.selected-product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.selected-product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+#product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#product-price {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.buy-now-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-now-button:hover {
+    background-color: #45a049;
+}
+.container {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.label1 {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input1 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button1 {
+    width: 5%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+#message {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #cddc39;
+}
+
+.nav-button .btn {
+    padding: 8px 15px;
+    background-color: #cddc39;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-button .btn:hover {
+    background-color: #aabb23;
+}
+
+.hero {
+    height: 80vh;
+    background: url('fresh-hero-image.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    padding: 10px 20px;
+    background-color: #cddc39;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #aabb23;
+}
+
+.image-section {
+    text-align: center; /* Ifoto iri hagati */
+    margin-bottom: 20px; /* Itanga intera hagati y'ifoto n'amagambo */
+}
+
+.featured-image {
+    width: 100%; /* Ifoto yuzura icyerekezo cyayo */
+    height: auto; /* Kugumana umubare nyawo */
+    max-width: 800px; /* Gushyiraho ubunini ntarengwa */
+}
+
+.features, .services, .testimonials {
+    padding: 40px 20px;
+    background-color:cyan;
+    text-align: center;
+}
+
+.features h2, .services h2, .testimonials h2 {
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+.feature, .service {
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+.cta {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #cddc39;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #aabb23;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+}
+
+
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Account Creation Styles */
+/* Parent container to center the element vertically and align it to the right */
+.containerCR {
+    display: flex;
+    justify-content: flex-end; /* Aligns child element to the right */
+    align-items: center; /* Centers child element vertically */
+    height: 100vh; /* Full viewport height for vertical centering */
+    padding-right: 20px; /* Optional: adds space from the right edge */
+}
+
+/* Original Block of CSS */
+.account-creation { 
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+
+/* Title Styles */
+.account-title {
+    text-align: center;
+    color: #4caf50; /* A shade of green for the heading */
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+#account-form {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    
+}
+
+/* Label Styles */
+.full-name-label,
+.email-label,
+.password-label,
+.confirm-password-label,
+.phone-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Styles */
+.full-name-input,
+.email-input,
+.password-input,
+.confirm-password-input,
+.phone-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button Styles */
+.create-account-button {
+    padding: 10px;
+    background-color: #4caf50; /* Button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-account-button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Notification Message Styles */
+#notification-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #d9534f; /* Red color for error messages */
+}
+
+
+
+
+
+
+
+/* About Container */
+.about-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Set a maximum width for the content */
+    margin: 40px auto; /* Centering the container */
+}
+
+/* Title Styles */
+.about-title {
+    text-align: center;
+    color: #4caf50; /* Green color for the title */
+    margin-bottom: 20px;
+}
+
+/* About Content Styles */
+.about-content {
+    text-align: left; /* Align text to the left */
+}
+
+/* Image Styles */
+.about-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 20px; /* Space below the image */
+}
+
+/* Description Styles */
+.about-description {
+    margin-bottom: 15px; /* Space between paragraphs */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .about-container {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+    
+    .about-title {
+        font-size: 1.8em; /* Slightly smaller title */
+    }
+}
+
+
+/* Contact Container */
+.contact-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Set a maximum width for the content */
+    margin: 40px auto; /* Centering the container */
+}
+
+/* Title Styles */
+.contact-title {
+    text-align: center;
+    color: #4caf50; /* Green color for the title */
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+#contact-form {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+
+/* Label Styles */
+.name-label,
+.email-label,
+.phone-label,
+.message-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input and Textarea Styles */
+.name-input,
+.email-input,
+.phone-input,
+.message-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button Styles */
+.submit-button {
+    padding: 10px;
+    background-color: #4caf50; /* Button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Notification Styles */
+.notification {
+    text-align: center;
+    margin-top: 20px;
+    color: #d9534f; /* Red color for error messages */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    .contact-title {
+        font-size: 1.8em; /* Slightly smaller title */
+    }
+}
+
+
+
+
+@keyframes circularMotion {
+    0% {
+      transform: rotate(0deg) translateX(70px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(70px) rotate(-360deg);
+    }
+  }
+
+.logo {
+    width: 100px; /* Adjust to your desired size */
+    height: 100px; /* Make sure width and height are equal */
+    border-radius: 50%; /* Makes the image round */
+    overflow: hidden; /* Hides overflow if necessary */
+    position: relative; /* Required for the animation */
+    animation: circularMotion 5s linear infinite; /* Animation properties */
+  }
+  .hero-section {
+    background-color: #00bcd4;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero-section .hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-section .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .shop-button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Featured Products Section */
+.product-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.product-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin-top: 15px;
+}
+
+.product-card p {
+    margin-top: 10px;
+}
+
+.product-card .buy-button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+.esell-section {
+    padding: 40px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.esell-container h1 {
+    font-size: 2.5em;
+    color: #444;
+}
+
+.esell-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.service-details {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.service-details h2, .service-details h3 {
+    color: #333;
+}
+
+.service-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.service-details ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+
+
+
+/* Overall container for the logo and name section */
+/* Original Block of CSS */
+.logo-containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cyan;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Left side - for logo */
+.logo-lefts {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 90px;
+}
+
+/* Logo Styling with Animation */
+.moving-logos {
+    width: 120px;
+    height: auto;
+    animation: rotatelogo 3s ease-in-out infinite;
+}
+
+/* Logo Slide Animation */
+@keyframes rotatelogo {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Logo Bounce Animation */
+@keyframes logoBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Right side - for name */
+.logo-rights {
+    flex: 3;
+    text-align: right;
+    margin-right: 110px;
+}
+
+.logo-names {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: textBounce 3s ease-in-out infinite, colorChange 6s linear infinite;
+    text-align: center;
+}
+
+.logo-center {
+    flex: 2;
+    text-align: center;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .logo-lefts {
+        margin-left: 50px;
+    }
+
+    .logo-rights {
+        margin-right: 50px;
+    }
+
+    .logo-names {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-containers {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .logo-lefts, .logo-rights {
+        flex: unset;
+        margin: 0;
+    }
+
+    .moving-logos {
+        width: 100px;
+    }
+
+    .logo-names {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-names {
+        font-size: 1.8em;
+    }
+    
+    .moving-logos {
+        width: 80px;
+    }
+}
+
+
+.form-image {
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Adds space between the form and the image */
+}
